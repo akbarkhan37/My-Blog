@@ -8,6 +8,11 @@ async function getPosts() {
   );
   return res.json();
 }
+// metadata for home page
+export const metadata = {
+  title: "Home Page",
+  description:"Welcome to my blog. Read the latest posts and updates here.  "
+}
 export default async function Home() {
   const posts = await getPosts();
   return(

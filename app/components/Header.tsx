@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import Image from "next/image";
 export default function Header() {
   return (
     <header className="bg-white shadow-md">
@@ -8,8 +8,14 @@ export default function Header() {
       justify-between items-center"
       >
         {/*logo  */}
-        <Link href="/" className="text-2xl font-bold text-blue-600">
-          My Logo
+        <Link href="/">
+         <Image 
+         src="/logo.png"
+         alt="Logo"
+         width={40}
+         height={40}
+         className="cursor-pointer"
+         />
         </Link>
         {/* Navigation */}
         <nav className="flex items-center gap-6">
